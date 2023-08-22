@@ -1,0 +1,345 @@
+/* start global rules */
+:root {
+  --main-color: black;
+  --second-background: #f6f6f6;
+  --background-color: white;
+  --color-red: #dc3545;
+  --color-yellow: #ffc107;
+  --color-green: #198754;
+  --color-blue: #0d6efd;
+  --main-transition: 0.3s;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  height: 100vh;
+  background-color: var(--background-color);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+button:focus,
+button:hover {
+  outline: none;
+  border: none;
+}
+.collapse {
+  justify-content: flex-end;
+}
+
+/* end global rules */
+/* start nav bar */
+.nav-bar {
+  color: var(--main-color);
+  background-color: var(--second-background);
+  padding: 10px 0;
+  height: 57px;
+}
+.nav-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .container .logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.nav-bar .container .continent {
+  font-weight: bold;
+  margin: 0;
+}
+.nav-bar .container .continent span {
+  color: var(--color-red);
+}
+.nav-bar .container .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+}
+.nav-bar .container .info .fa-exclamation {
+  height: 23px;
+  width: 23px;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-bar .container .language button {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: block;
+  margin: 0;
+}
+.nav-bar .container .mood {
+  margin: 0;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.nav-bar .container .mood div {
+  background-color: var(--main-color);
+  color: var(--background-color);
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .nav-bar .container .logo {
+    display: none;
+  }
+  .nav-bar .container .info {
+    gap: 10px;
+  }
+  .nav-bar .info .fa-exclamation {
+    padding: 3px;
+  }
+  .nav-bar .container .continent {
+    font-size: 18px;
+  }
+}
+/* end nav bar */
+/* start body */
+.body {
+  background-color:var(--background-color);
+  color: var(--main-color);
+}
+.body .container {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 50px;
+}
+.body .container img {
+  width: 400px;
+  border-radius: 10px;
+  border :1px solid var(--main-color)
+}
+.body .container .control {
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid var(--main-color);
+  margin-top: 20px;
+}
+.body .container .about-country {
+  color: var(--main-color);
+  font-size: 20px;
+  margin-top: 20px;
+}
+.body .container .hint {
+  padding: 3px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background-color: var(--color-blue);
+  border-radius: 7px;
+}
+.body .container .hint:hover {
+  opacity: 0.7;
+}
+.body .container .control .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.body .container .timer {
+  background-color: var(--second-background);
+  padding: 3px 5px;
+  font-weight: bold;
+}
+.body .container .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .container .input input {
+  padding: 7px 10px;
+  font-size: 20px;
+  outline: none;
+  background-color: var(--second-background);
+  border: none;
+  width: 300px;
+  border-bottom: 1px solid var(--main-color);
+  color: var(--main-color);
+}
+.body .container .input button {
+  padding: 7px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-green);
+  margin-right: 20px;
+  cursor: pointer;
+}
+.body .container .bullets span {
+  font-size: 18px;
+  padding: 2px 10px;
+  background-color: var(--color-red);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .body .container img {
+    width: 300px;
+  }
+  .body .container .control {
+    margin-top: 40px;
+  }
+
+  .body .container .input button {
+    margin: 0;
+  }
+  .body .container .input {
+    margin-bottom: 30px;
+  }
+  .body .container .input input {
+    width: auto;
+    margin-right: 10px;
+  }
+}
+/* end body */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+.overlay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  z-index: 10000;
+}
+.info-card {
+  position: absolute;
+  z-index: 10003;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.info-card .title-info {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto 30px;
+}
+@media (max-width:767px) {
+  .info-card{
+    width: 90%;
+  }
+}
+
+.bullets .bull{
+  color: var(--color-red);
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+
+.done{
+  filter: grayscale();
+  cursor:default;
+}
+
+.replay{
+  padding: 7px 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: var(--color-blue);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.pra{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the country</title>
+    <link rel="fav icon" href="imgs/fav-icon.png" />
+    <!-- font awesome file-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- style fille -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="container">
+        <h3 class="logo">خمن الدوله</h3>
+        <p class="continent">القاره: <span></span></p>
+        <div class="info">
+          <label class="switch">
+            <input type="checkbox" >
+            <span class="slider"></span>
+        </label>
+          <span class="info-game"><i class="fa-solid fa-exclamation"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="container">
+        <div class="image">
+          <img src="" alt="flag" />
+          <p class="about-country"></p>
+        </div>
+        <div class="control">
+          <div class="input">
+            <input type="text" placeholder="خمن الدوله" />
+            <button class="submit">تأكيد</button>
+          </div>
+          <div class="info">
+            <button class="hint">تلميح</button>
+            <div class="bullets">
+              <i class="bull fa-solid fa-heart"></i>: <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio class="fail" src="negative_beeps-6008.mp3"></audio>
+      <audio class="lose" src="wah-wah-sad-trombone-6347.mp3"></audio>
+      <audio class="hintSound" src="hint.mp3"></audio>
+      <audio class="sucsess" src="success-1-6297.mp3"></audio>
+    </div>
+    <!-- font awesome file -->
+    <script src="js/all.min.js"></script>
+    <!-- bootstrap file -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- main file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
