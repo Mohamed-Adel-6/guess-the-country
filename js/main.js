@@ -75,7 +75,7 @@ let country = [
     ],
   },
   {
-    flag: "jordan",
+    flag: "Jordan",
     name: "الاردن",
     Continent: "اسيا",
     hints: [
