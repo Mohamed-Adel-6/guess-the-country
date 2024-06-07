@@ -360,11 +360,8 @@ InfoGame.onclick = function MainInfo() {
 
   let bodyInfo = document.createElement("p");
   bodyInfo.className = "body-info";
-  let bodyInfoText = document.createTextNode(
-    " خمن الدوله لعبة من صنع محمد عادل. تحتوي هذه اللعبة على أعلام الدول ولديك 5 تلميحات لهذه الدولة. عليك تخمين اسم البلد ولديك 5 أخطاء فقط و عند النتهاء من التخمين يجب الضغط علي زر تأكيد ."
-  );
+  let bodyInfoText = document.createTextNode(" خمن الدوله لعبة من صنع محمد عادل. تحتوي هذه اللعبة على أعلام الدول ولديك 5 تلميحات لهذه الدولة. عليك تخمين اسم البلد ولديك 5 أخطاء فقط ويجب عدم ترك مسافات بعد الكلمة او قبلها و عند النتهاء من التخمين يجب الضغط علي زر تأكيد .");
   bodyInfo.appendChild(bodyInfoText);
-
   InfoCard.appendChild(title);
   InfoCard.appendChild(bodyInfo);
   document.body.appendChild(overlay);
