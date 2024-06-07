@@ -143,8 +143,19 @@ button:hover {
   margin-top: 40px;
   padding-top: 50px;
 }
+.body .container .image {
+  height: 380px;
+  width: 100%;
+}
+@media (max-width:800px) {
+  .body .container .image {
+    height: 280px;
+    width: 100%;
+  }
+}
 .body .container img {
   width: 400px;
+  height: 250px;
   border-radius: 10px;
   border :1px solid var(--main-color)
 }
